@@ -19,7 +19,7 @@ int Monome::get_coeff() const{
     return(coeff);
 }
 
-unsigned Monome::get_degre() const{
+unsigned int Monome::get_degre() const{
     return(degre);
 }
 
@@ -41,7 +41,7 @@ bool Monome::operator==(Monome const& X2) const{
     }
 }
 
-const Monome operator+(Monome X1, Monome const& X2){
+const Monome operator+(Monome const& X1, Monome const& X2){
     if(X1.get_degre() != X2.get_degre()){
         throw "Somme impossible : Monome de degree differents";
     }
@@ -50,7 +50,7 @@ const Monome operator+(Monome X1, Monome const& X2){
     }
 }
 
-const Monome operator-(Monome X1, Monome const& X2){
+const Monome operator-(Monome const& X1, Monome const& X2){
     return(X1 + Monome(- X2.get_coeff(), X2.get_degre()) );
 }
 
@@ -76,6 +76,6 @@ const Monome operator*(Monome const& X, int x){
     return( x*X );
 }
 
-const Monome operator*(Monome X1, Monome const& X2){
+const Monome operator*(Monome const& X1, Monome const& X2){
     return(Monome(X1.get_coeff()*X2.get_coeff(), X1.get_degre() + X2.get_degre()));
 }
