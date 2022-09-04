@@ -1,3 +1,8 @@
+#ifndef _MONOME_HPP_
+#define _MONOME_HPP_
+
+#include <string>
+
 class Monome{
     friend class Polynome;
     public:
@@ -23,3 +28,5 @@ const Monome operator*(Monome const& X, int x); // surcharge externe
 const Monome operator*(Monome const& X1, Monome const& X2); // surcharge externe pour le produit de deux monomes
 
 std::ostream& operator<<(std::ostream& sortie, Monome const& X); // surcharge externe 
+
+#endif

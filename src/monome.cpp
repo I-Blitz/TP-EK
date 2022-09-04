@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "monome.hpp"
 #include <bits/stdc++.h>
 
