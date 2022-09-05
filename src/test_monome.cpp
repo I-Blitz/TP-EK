@@ -1,6 +1,7 @@
 #include <iostream>
 #include "monome.hpp"
 
+/*
 int main(){
     std::cout << "Hello World!" << std::endl;
 
@@ -42,3 +43,4 @@ int main(){
     std::cout << "P*Q : " << P*Q << std::endl;
     return(0);
 }
+*/

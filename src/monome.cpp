@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "monome.hpp"
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> // pour pow
 
 Monome::Monome(int coeff, unsigned int degre)
     :coeff(coeff),degre(degre)
